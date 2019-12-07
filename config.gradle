@@ -1,0 +1,66 @@
+ext {
+    //创建了一个名为android的，类型为map的变量，groovy中可以用[]来创建map类型。那么就是一个map下面又创
+    //建了一个map，且名字叫做android。
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.2",
+            minSdkVersion    : 15,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : "1.0",
+            applicationId    : "com.adasplus.adasplus"
+    ]
+
+    dependenciesVersionNumber = [
+            appcompat       : "1.1.0",
+            constraintlayout: "1.1.3",
+            junit           : "4.12",
+            testjunit       : "1.1.1",
+            espressocore    : "3.2.0"
+    ]
+
+    libVersionNumber = [
+            arouterapi        : "1.5.0",
+            aroutercompiler   : "1.2.2",
+            retrofit          : "2.6.2",
+            adapterrxjava     : "2.6.2",
+            convertergson     : "2.6.2",
+            logginginterceptor: "4.2.1",
+            gson              : "2.8.6",
+//            rxjava            : "2.2.10",
+            rxjava            : "1.1.5",
+//            rxandroid         : "2.1.1",
+            rxandroid         : "1.2.0"
+    ]
+
+    libs = [
+            "arouter-api"        : "com.alibaba:arouter-api:${libVersionNumber.arouterapi}",
+//            "arouter-compiler"   : "com.alibaba:arouter-compiler:${libVersionNumber.aroutercompiler}",
+            "retrofit"           : "com.squareup.retrofit2:retrofit:${libVersionNumber.retrofit}",
+            "adapterrxjava"      : "com.squareup.retrofit2:adapter-rxjava:${libVersionNumber.adapterrxjava}",
+            "convertergson"      : "com.squareup.retrofit2:converter-gson:${libVersionNumber.convertergson}",
+            "logging-interceptor": "com.squareup.okhttp3:logging-interceptor:${libVersionNumber.logginginterceptor}",
+            "gson"               : "com.google.code.gson:gson:${libVersionNumber.gson}",
+//            "rxjava"             : "io.reactivex.rxjava2:rxjava:${libVersionNumber.rxjava}",
+//            "rxandroid"          : "io.reactivex.rxjava2:rxandroid:${libVersionNumber.rxandroid}",
+            "rxjava"             : "io.reactivex:rxjava:${libVersionNumber.rxjava}",
+            "rxandroid"          : "io.reactivex:rxandroid:${libVersionNumber.rxandroid}"
+    ]
+
+    commons = [
+//            "appcompat"       : "androidx.appcompat:appcompat:${dependenciesVersionNumber.appcompat}",
+//            "constraintlayout": "androidx.constraintlayout:constraintlayout:${dependenciesVersionNumber.constraintlayout}",
+            "junit"           : "junit:junit:${dependenciesVersionNumber.junit}",
+            "testjunit"       : "androidx.test.ext:junit:${dependenciesVersionNumber.testjunit}",
+            "espressocore"    : "androidx.test.espresso:espresso-core:${dependenciesVersionNumber.espressocore}"
+    ]
+
+    appcompats = [
+            "appcompat"       : "androidx.appcompat:appcompat:${dependenciesVersionNumber.appcompat}",
+            "constraintlayout": "androidx.constraintlayout:constraintlayout:${dependenciesVersionNumber.constraintlayout}",
+    ]
+
+    supportLibs = libs.values()
+    commonLibs = commons.values()
+    appcompatLibs = appcompats.values()
+}

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">lib_common</string>
+    <string name="service_back_data_parse_error">json数据解析异常</string>
+    <string name="no_export_file">没有可导出的文件，请重新选择!</string>
+    <string name="formatting_not_supported">该设备为重要分区不支持格式化</string>
+    <string name="params_no_completed">数据有必填参数未填写!</string>
+    <string name="invalid_data">无效数据</string>
+    <string name="invalid_request">无效请求</string>
+    <string name="platform_connect_fail">平台连接失败</string>
+    <string name="car_registered">连接失败,车辆已被注册</string>
+    <string name="db_no_car">连接失败,数据库无该车辆</string>
+    <string name="terminal_registered">连接失败，终端已被注册</string>
+    <string name="db_no_terminal">连接失败,数据库中无该终端</string>
+    <string name="file_export_destination_not_ready">文件导出目标存储设备未就绪</string>
+    <string name="format_failure">格式化失败</string>
+
+    <string name="terminal_communication_services_disconnect">与终端通讯服务已断开连接</string>
+    <string name="please_check_network_is_available">请检查当前的网络是否可用</string>
+    <string name="service_connect_timeout">请求超时</string>
+
+
+
+
+
+</resources>
